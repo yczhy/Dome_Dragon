@@ -1,0 +1,41 @@
+/* EventGraphView.uss */
+
+/* 定义方法行的样式 */
+.method-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2px;
+    border-left-width: 1px;
+    border-left-color: #8B6969;
+    border-right-width: 1px;
+    border-right-color: #8B6969;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* 定义方法名标签的样式 */
+.method-label {
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+    margin-left: 5px;
+    margin-right: 5px;
+    -unity-font-style: bold;
+    border-left-width: 1px;
+    border-left-color: #8B6969;
+    border-right-width: 1px;
+    border-right-color: #8B6969;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* 拖放高亮样式 */
+.graphview-drop-highlight {
+    background-color: rgba(0.8, 0.8, 0.8, 0.3);
+}
+
+/* 确保方法名标签不会过长导致布局问题 */
+.method-label > label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
